@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { inter: ["Inter", "sans-serif"] },
+              colors: {
+                greenish: "#4CAF4F",
+                lightGrey: "#F5F7FA",
+                hcolor : "#4D4D4D",
+  
+              },
+            },
+          },
+        };
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="flex flex-col px-20 py-12 bg-stone-50 max-md:px-5">
+        <header class="flex gap-5 justify-between px-px w-full text-xs font-bold tracking-wider text-gray-500 uppercase max-md:flex-wrap max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a37a4c861c0003e1a9884c014ef02d513cd9ba14e403b4332274506db066c7f?apiKey=f400854b370041c18ce96f7be72648db&" alt="Logo" class="max-w-full aspect-[9.09] w-[236px]" />
+            <nav class="flex gap-5 justify-between my-auto">
+                <a href="/" class="hover:text-gray-700">HOME</a>
+                <a href="/about" class="hover:text-gray-700">ABOUT US</a>
+                <a href="/plan" class="flex-auto hover:text-gray-700">Create your plan</a>
+            </nav>
+        </header>
+        <section class="flex overflow-hidden relative flex-col items-start px-20 py-12 mt-11 min-h-[450px] text-stone-50 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/34f92ca487242f494e01eabd31fb8359f3c0e787369ad387803cc12ad59137fa?apiKey=f400854b370041c18ce96f7be72648db&" alt="About Us Image" class="object-cover absolute inset-0 size-full" />
+            <div class="relative mt-24 text-4xl font-black leading-10 max-md:mt-10 max-md:max-w-full">About Us</div>
+            <p class="relative mt-10 mb-16 text-base leading-7 w-[445px] max-md:my-10 max-md:max-w-full">Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.</p>
+        </section>
+        <section class="self-center mt-44 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277e230d5cbf13a75a6b4766bee8d653fec34daff955bc72219da7d7b5b8ad5?apiKey=f400854b370041c18ce96f7be72648db&" alt="Our commitment" class="grow w-full aspect-[0.85] max-md:mt-10 max-md:max-w-full" />
+                </div>
+                <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col self-stretch my-auto text-gray-700 max-md:mt-10 max-md:max-w-full">
+                        <div class="text-4xl font-black leading-10 max-md:max-w-full">Our commitment</div>
+                        <p class="mt-12 text-base leading-7 max-md:mt-10 max-md:max-w-full">We’re built on a simple mission and a commitment to doing good along the way. We want to make it easy for you to discover and brew the world’s best coffee at home...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overflow-hidden px-20 pb-12 mt-64 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
+                    <div class="flex z-10 flex-col self-stretch my-auto text-stone-50 max-md:mt-10 max-md:max-w-full">
+                        <div class="text-4xl font-black leading-10 max-md:max-w-full">Uncompromising quality</div>
+                        <p class="mt-10 text-base leading-7 max-md:max-w-full">Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry...</p>
+                    </div>
+                </div>
+                <div class="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fabdbc5a59cd5d4e44b4fa4c9c83dbc389400199bea7e78ee87c1cf961511337?apiKey=f400854b370041c18ce96f7be72648db&" alt="Quality control image" class="mt-0 w-full aspect-[0.93] max-md:mt-9 max-md:max-w-full" />
+                </div>
+            </div>
+        </section>
+        <section class="mt-44 ml-20 w-full max-w-[1110px] max-md:mt-10 max-md:ml-2.5">
+            <h2 class="text-2xl font-black leading-8 text-gray-500">Our headquarters</h2>
+            <div class="mt-20 max-w-full">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                    <div class="flex flex-col w-[81%] max-md:ml-0 max-md:w-full">
+                        <div class="grow max-md:mt-10 max-md:max-w-full">
+                            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                                <div class="flex flex-col w-[69%] max-md:ml-0 max-md:w-full">
+                                    <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/162dcf7fc3fbb434cda80c2ffe785580ea813b3a3f7c363287e5bbbf6f680024?apiKey=f400854b370041c18ce96f7be72648db&" alt="UK Office" class="aspect-[0.83] fill-teal-600 w-[41px]" />
+                                        <div class="mt-14 text-3xl font-black leading-9 whitespace-nowrap max-md:mt-10">United Kingdom</div>
+                                        <address class="mt-8 text-base leading-7 not-italic">68 Asfordby Rd<br>Alcaston<br>SY6 1YA<br>+44 1241 918425</address>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col ml-5 w-[31%] max-md:ml-0 max-md:w-full">
+                                    <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/50f8827eb3c1d0631d6de9d6468cdfca30e7dddd10d56fcb73268ba59d8e34ae?apiKey=f400854b370041c18ce96f7be72648db&" alt="Canada Office" class="aspect-[1.04] fill-teal-600 w-[52px]" />
+                                        <div class="mt-12 text-3xl font-black leading-9 max-md:mt-10">Canada</div>
+                                        <address class="mt-9 text-base leading-7 not-italic">1528 Eglinton Avenue<br>Toronto<br>Ontario M4P 1A6<br>+1 416 485 2997</address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
+                        <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/37ed44649b2cee50fd7ba3a745da610e62d890c7bd8d4a78b4a5bc8deb416bc2?apiKey=f400854b370041c18ce96f7be72648db&" alt="Australia Office" class="aspect-[1.11] fill-teal-600 w-[49px]" />
+                            <div class="mt-14 text-3xl font-black leading-9 max-md:mt-10">Australia</div>
+                            <address class="mt-10 text-base leading-7 not-italic">36 Swanston Street<br>Kewell<br>Victoria<br>+61 4 9928 3629</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="flex gap-5 justify-between px-20 py-12 mt-44 w-full text-xs font-bold tracking-wider text-gray-500 uppercase bg-slate-800 max-md:flex-wrap max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9044ae8c2739b2cc6f4d63e10f2afb7897769801b507ee3d5680de51187dd0b?apiKey=f400854b370041c18ce96f7be72648db&" alt="Footer Logo" class="max-w-full aspect-[9.09] w-[236px]" />
+            <nav class="flex gap-5 justify-between my-auto">
+                <a href="/" class="hover:text-stone-50">HOME</a>
+                <a href="/about" class="hover:text-stone-50">ABOUT US</a>
+                <a href="/plan" class="flex-auto hover:text-stone-50">Create your plan</a>
+            </nav>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5446eecbe8a1ab7479d94c9c0fc589146e38572df17385ae64b536cfe16b1f69?apiKey=f400854b370041c18ce96f7be72648db&" alt="Social Media Icon" class="self-start max-w-full aspect-[5] w-[120px]" />
+        </footer>
+    </div>
+
+</body>
+</html>

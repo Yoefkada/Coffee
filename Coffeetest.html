@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { inter: ["Inter", "sans-serif"] },
+            colors: {
+              greenish: "#4CAF4F",
+              lightGrey: "#F5F7FA",
+              hcolor : "#4D4D4D",
+
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="flex flex-col px-20 py-12 bg-stone-50 max-md:px-5">
+        <header class="flex gap-5 justify-between px-px w-full text-xs font-bold tracking-wider text-gray-500 uppercase max-md:flex-wrap max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a37a4c861c0003e1a9884c014ef02d513cd9ba14e403b4332274506db066c7f?apiKey=f400854b370041c18ce96f7be72648db&" class="max-w-full aspect-[9.09] w-[236px]" alt="Logo" />
+          <nav class="flex gap-5 justify-between my-auto">
+            <a href="#home" class="hover:text-gray-700">HOME</a>
+            <a href="#about" class="hover:text-gray-700">ABOUT US</a>
+            <a href="#create-plan" class="flex-auto hover:text-gray-700">Create your plan</a>
+          </nav>
+        </header>
+        <section class="flex overflow-hidden relative flex-col items-start px-20 py-12 mt-11 font-black min-h-[600px] text-stone-50 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/965c56b6fbffc4488bc5489b345d4c93a6cbc070756456ae8f072678535bb3d0?apiKey=f400854b370041c18ce96f7be72648db&" class="object-cover absolute inset-0 size-full" alt="Coffee preparation" />
+          <div class="relative mt-20 text-7xl leading-[72px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+            Great coffee <br /> made simple.
+          </div>
+          <p class="relative mt-8 text-base leading-7 w-[445px] max-md:max-w-full">
+            Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.
+          </p>
+          <button class="relative justify-center px-8 py-5 mt-16 mb-11 text-lg leading-6 text-center whitespace-nowrap bg-teal-600 rounded-md max-md:px-5 max-md:my-10 max-md:ml-1.5 focus:outline-none focus:ring focus:ring-teal-500">
+            Create your plan
+          </button>
+        </section>
+        <h2 class="self-center mt-48 text-9xl font-black text-center text-gray-500 leading-[72px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          our collection
+        </h2>
+        <section class="self-center mt-56 w-full max-w-[1088px] max-md:mt-10 max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <!-- Repeat this structure for each coffee type as needed -->
+            <!-- Example for one coffee type -->
+            <article class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col grow text-center text-gray-700 max-md:mt-10">
+                <h3 class="self-center text-2xl font-black leading-8">Gran Espresso</h3>
+                <p class="mt-8 text-base leading-7">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+              </div>
+            </article>
+            <!-- Further coffee types would follow the same structure -->
+          </div>
+        </section>
+        <section class="flex overflow-hidden relative flex-col items-center px-20 pt-12 mt-52 w-full min-h-[577px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9584e13f02c3c2dcc99627974de6e05b9607c6316489db7ac44d70c6788f4b0f?apiKey=f400854b370041c18ce96f7be72648db&" class="object-cover absolute inset-0 size-full" alt="Why choose us background" />
+          <h2 class="relative mt-14 text-4xl font-black leading-10 text-center whitespace-nowrap text-stone-50 max-md:mt-10">
+            Why choose us?
+          </h2>
+          <p class="relative mt-10 text-base leading-7 text-center text-stone-50 w-[540px] max-md:mt-10 max-md:max-w-full">
+            A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.
+          </p>
+          <div class="relative z-10 self-stretch mt-24 mb-0 max-md:mt-10 max-md:mr-1.5 max-md:mb-2.5 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+              <!-- Repeat this structure for each benefit as needed -->
+              <!-- Example for one benefit -->
+              <div class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                <div class="flex relative flex-col grow items-center px-12 py-12 w-full text-center bg-teal-600 rounded-lg text-stone-50 max-md:px-5 max-md:mt-8">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1badb39af5f4ba3bf44e36164e1302afda904444f2a588c6c0460e7dc8e868e3?apiKey=f400854b370041c18ce96f7be72648db&" class="mt-6 aspect-square w-[72px]" alt="Best quality" />
+                  <h3 class="mt-16 text-2xl font-black leading-8 max-md:mt-10">Best quality</h3>
+                  <p class="self-stretch mt-8 text-base leading-7">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                </div>
+              </div>
+              <!-- Further benefits would follow the same structure -->
+            </div>
+          </div>
+        </section>
+        <footer class="flex gap-5 justify-between px-20 py-12 mt-52 w-full text-xs font-bold tracking-wider text-gray-500 uppercase bg-slate-800 max-md:flex-wrap max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9044ae8c2739b2cc6f4d63e10f2afb7897769801b507ee3d5680de51187dd0b?apiKey=f400854b370041c18ce96f7be72648db&" class="max-w-full aspect-[9.09] w-[236px]" alt="Footer logo" />
+          <nav class="flex gap-5 justify-between my-auto">
+            <a href="#home" class="hover:text-gray-400">HOME</a>
+            <a href="#about" class="hover:text-gray-400">ABOUT US</a>
+            <a href="#create-plan" class="flex-auto hover:text-gray-400">Create your plan</a>
+          </nav>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5446eecbe8a1ab7479d94c9c0fc589146e38572df17385ae64b536cfe16b1f69?apiKey=f400854b370041c18ce96f7be72648db&" class="self-start max-w-full aspect-[5] w-[120px]" alt="Social media icon" />
+        </footer>
+      </div>
+
+      <div class="flex flex-col px-20 py-12 bg-stone-50 max-md:px-5">
+        <header class="flex gap-5 justify-between px-px w-full text-xs font-bold tracking-wider text-gray-500 uppercase max-md:flex-wrap max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a37a4c861c0003e1a9884c014ef02d513cd9ba14e403b4332274506db066c7f?apiKey=f400854b370041c18ce96f7be72648db&" alt="Logo" class="max-w-full aspect-[9.09] w-[236px]" />
+            <nav class="flex gap-5 justify-between my-auto">
+                <a href="/" class="hover:text-gray-700">HOME</a>
+                <a href="/about" class="hover:text-gray-700">ABOUT US</a>
+                <a href="/plan" class="flex-auto hover:text-gray-700">Create your plan</a>
+            </nav>
+        </header>
+        <section class="flex overflow-hidden relative flex-col items-start px-20 py-12 mt-11 min-h-[450px] text-stone-50 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/34f92ca487242f494e01eabd31fb8359f3c0e787369ad387803cc12ad59137fa?apiKey=f400854b370041c18ce96f7be72648db&" alt="About Us Image" class="object-cover absolute inset-0 size-full" />
+            <div class="relative mt-24 text-4xl font-black leading-10 max-md:mt-10 max-md:max-w-full">About Us</div>
+            <p class="relative mt-10 mb-16 text-base leading-7 w-[445px] max-md:my-10 max-md:max-w-full">Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.</p>
+        </section>
+        <section class="self-center mt-44 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277e230d5cbf13a75a6b4766bee8d653fec34daff955bc72219da7d7b5b8ad5?apiKey=f400854b370041c18ce96f7be72648db&" alt="Our commitment" class="grow w-full aspect-[0.85] max-md:mt-10 max-md:max-w-full" />
+                </div>
+                <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col self-stretch my-auto text-gray-700 max-md:mt-10 max-md:max-w-full">
+                        <div class="text-4xl font-black leading-10 max-md:max-w-full">Our commitment</div>
+                        <p class="mt-12 text-base leading-7 max-md:mt-10 max-md:max-w-full">We’re built on a simple mission and a commitment to doing good along the way. We want to make it easy for you to discover and brew the world’s best coffee at home...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overflow-hidden px-20 pb-12 mt-64 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
+                    <div class="flex z-10 flex-col self-stretch my-auto text-stone-50 max-md:mt-10 max-md:max-w-full">
+                        <div class="text-4xl font-black leading-10 max-md:max-w-full">Uncompromising quality</div>
+                        <p class="mt-10 text-base leading-7 max-md:max-w-full">Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry...</p>
+                    </div>
+                </div>
+                <div class="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fabdbc5a59cd5d4e44b4fa4c9c83dbc389400199bea7e78ee87c1cf961511337?apiKey=f400854b370041c18ce96f7be72648db&" alt="Quality control image" class="mt-0 w-full aspect-[0.93] max-md:mt-9 max-md:max-w-full" />
+                </div>
+            </div>
+        </section>
+        <section class="mt-44 ml-20 w-full max-w-[1110px] max-md:mt-10 max-md:ml-2.5">
+            <h2 class="text-2xl font-black leading-8 text-gray-500">Our headquarters</h2>
+            <div class="mt-20 max-w-full">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                    <div class="flex flex-col w-[81%] max-md:ml-0 max-md:w-full">
+                        <div class="grow max-md:mt-10 max-md:max-w-full">
+                            <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                                <div class="flex flex-col w-[69%] max-md:ml-0 max-md:w-full">
+                                    <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/162dcf7fc3fbb434cda80c2ffe785580ea813b3a3f7c363287e5bbbf6f680024?apiKey=f400854b370041c18ce96f7be72648db&" alt="UK Office" class="aspect-[0.83] fill-teal-600 w-[41px]" />
+                                        <div class="mt-14 text-3xl font-black leading-9 whitespace-nowrap max-md:mt-10">United Kingdom</div>
+                                        <address class="mt-8 text-base leading-7 not-italic">68 Asfordby Rd<br>Alcaston<br>SY6 1YA<br>+44 1241 918425</address>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col ml-5 w-[31%] max-md:ml-0 max-md:w-full">
+                                    <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/50f8827eb3c1d0631d6de9d6468cdfca30e7dddd10d56fcb73268ba59d8e34ae?apiKey=f400854b370041c18ce96f7be72648db&" alt="Canada Office" class="aspect-[1.04] fill-teal-600 w-[52px]" />
+                                        <div class="mt-12 text-3xl font-black leading-9 max-md:mt-10">Canada</div>
+                                        <address class="mt-9 text-base leading-7 not-italic">1528 Eglinton Avenue<br>Toronto<br>Ontario M4P 1A6<br>+1 416 485 2997</address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
+                        <div class="flex flex-col grow text-gray-700 max-md:mt-10">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/37ed44649b2cee50fd7ba3a745da610e62d890c7bd8d4a78b4a5bc8deb416bc2?apiKey=f400854b370041c18ce96f7be72648db&" alt="Australia Office" class="aspect-[1.11] fill-teal-600 w-[49px]" />
+                            <div class="mt-14 text-3xl font-black leading-9 max-md:mt-10">Australia</div>
+                            <address class="mt-10 text-base leading-7 not-italic">36 Swanston Street<br>Kewell<br>Victoria<br>+61 4 9928 3629</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="flex gap-5 justify-between px-20 py-12 mt-44 w-full text-xs font-bold tracking-wider text-gray-500 uppercase bg-slate-800 max-md:flex-wrap max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9044ae8c2739b2cc6f4d63e10f2afb7897769801b507ee3d5680de51187dd0b?apiKey=f400854b370041c18ce96f7be72648db&" alt="Footer Logo" class="max-w-full aspect-[9.09] w-[236px]" />
+            <nav class="flex gap-5 justify-between my-auto">
+                <a href="/" class="hover:text-stone-50">HOME</a>
+                <a href="/about" class="hover:text-stone-50">ABOUT US</a>
+                <a href="/plan" class="flex-auto hover:text-stone-50">Create your plan</a>
+            </nav>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5446eecbe8a1ab7479d94c9c0fc589146e38572df17385ae64b536cfe16b1f69?apiKey=f400854b370041c18ce96f7be72648db&" alt="Social Media Icon" class="self-start max-w-full aspect-[5] w-[120px]" />
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<div class="flex flex-col px-6 pt-8 pb-12 mx-auto w-full bg-stone-50 max-w-[480px]">
+    <header class="flex flex-col items-center font-black text-center text-gray-700">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6642c5883e7c549c5cf8ec137d59e128276ca49567b8bfa333d4e5fe826721af?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="aspect-[16.67] w-[327px]" />
+      <section class="flex overflow-hidden relative flex-col self-stretch px-7 py-12 mt-10 w-full aspect-[0.65] text-stone-50">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/625485fb01c197c45f2e5ce3e6e4b27d572f87c954bf0f6f00186d6ef37972f2?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="object-cover absolute inset-0 size-full" />
+        <div class="relative mt-14 text-4xl leading-10">Great coffee<br>made simple.</div>
+        <p class="relative mt-7 text-base leading-6">Start your mornings with the world’s best coffees. Try our expertly curated artisan<br>coffees from our best roasters delivered directly to your door, at your schedule.</p>
+        <button class="relative justify-center self-center px-8 py-5 mt-11 mb-12 text-lg leading-6 whitespace-nowrap bg-teal-600 rounded-md">Create your plan</button>
+      </section>
+      <h2 class="mt-36 text-4xl text-gray-500 whitespace-nowrap leading-[72px]">our collection</h2>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d802e25e2f6c990771e21e3f4501b01d35658bbf80528dbf56c4644a9ca3e514?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-9 max-w-full aspect-[1.32] w-[200px]" />
+      <h3 class="mt-8 text-2xl leading-8">Gran Espresso</h3>
+      <p class="mt-7 text-base leading-6">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5403e978bbd50ed6cf5762671a6c6c19977133aa8b2f619b2579433e5786baf?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-12 max-w-full aspect-[1.32] w-[200px]" />
+      <h3 class="mt-8 text-2xl leading-8">Planalto</h3>
+      <p class="mt-8 text-base leading-6">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b0c7158479a75df5b964ad1db015dd4c99490ee5902af389ca7ffaf180ee27e?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-12 max-w-full aspect-[1.32] w-[200px]" />
+      <h3 class="mt-8 text-2xl leading-8">Piccollo</h3>
+      <p class="mt-8 text-base leading-6">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/233d4640709bd55b381be81ed9340f2d41ded6f8e2c2d4c880c04647f2b7c8e5?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-12 max-w-full aspect-[1.32] w-[200px]" />
+      <h3 class="mt-8 text-2xl leading-8">Danche</h3>
+      <p class="mt-8 text-base leading-6">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+    </header>
+    <main class="flex flex-col items-center mt-32 text-center">
+      <section class="flex overflow-hidden relative flex-col self-stretch px-6 py-12 w-full aspect-[0.36] text-stone-50">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cef599eca0caee52062d5ab3ceb28fae6e09fd87a3710f710e19a2c752cb646c?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="object-cover absolute inset-0 size-full" />
+        <h2 class="relative self-center mt-4 text-3xl font-black leading-7">Why choose us?</h2>
+        <p class="relative mt-8 text-base leading-6">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+        <div class="flex relative flex-col items-center px-11 py-12 mt-16 mb-32 bg-teal-600 rounded-lg">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1badb39af5f4ba3bf44e36164e1302afda904444f2a588c6c0460e7dc8e868e3?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-6 aspect-square w-[72px]" />
+          <h3 class="mt-16 text-2xl font-black leading-8">Best quality</h3>
+          <p class="self-stretch mt-9 mb-2 text-base leading-6">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+        </div>
+      </section>
+      <div class="flex z-10 flex-col px-7 py-12 mt-0 w-full bg-teal-600 rounded-lg max-w-[279px] text-stone-50">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e2d2cec27b56a38f2e75affb655457ae114cdf8caaecf788ad7b09158881a802?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="self-center mt-6 aspect-square fill-orange-200 w-[72px]" />
+        <h3 class="mt-16 text-2xl font-black leading-8">Exclusive benefits</h3>
+        <p class="mt-10 text-base leading-7">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+      </div>
+      <div class="flex flex-col items-center px-10 py-12 mt-6 w-full bg-teal-600 rounded-lg max-w-[279px]">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/48fc35e1ec4b00ef7c39fd8732e7f6fa55cd51d45c6dddb19f52ced6838ec5da?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-8 aspect-[1.45] fill-orange-200 w-[72px]" />
+        <h3 class="mt-20 text-2xl font-black leading-8 text-white">Free shipping</h3>
+        <p class="self-stretch mt-8 text-base leading-7 text-stone-50">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+      </div>
+      <h2 class="mt-32 text-2xl font-black leading-8 text-gray-500">How it works</h2>
+    </main>
+    <footer class="flex flex-col items-center mt-24 font-black text-center text-gray-700">
+      <h3 class="text-7xl text-orange-200 leading-[72px]">01</h3>
+      <h4 class="mt-10 text-3xl leading-8">Pick your coffee</h4>
+      <p class="self-stretch mt-8 text-base leading-6">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+      <h3 class="text-7xl text-orange-200 leading-[72px] mt-16">02</h3>
+      <h4 class="mt-10 text-3xl leading-8">Choose the frequency</h4>
+      <p class="mt-8 text-base leading-6">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+      <h3 class="text-7xl text-orange-200 leading-[72px] mt-16">03</h3>
+      <h4 class="mt-10 text-3xl leading-8">Receive and enjoy!</h4>
+      <p class="self-stretch mt-8 text-base leading-6">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+      <button class="justify-center self-center px-8 py-5 mt-20 text-lg font-black leading-6 text-center bg-teal-600 rounded-md text-stone-50">Create your plan</button>
+      <nav class="flex flex-col items-center px-14 py-12 mt-32 text-xs font-bold tracking-wider text-gray-500 uppercase bg-slate-800">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b57c514797b243675d444cf9c03eea3221564104d8aa98900962109d1c2fb8f7?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-1 aspect-[9.09] w-[218px]" />
+        <a href="/" class="mt-14">HOME</a>
+        <a href="/about" class="mt-8">ABOUT US</a>
+        <a href="/create-your-plan" class="mt-8">Create your plan</a>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ab9fdb545b332b85bb4b482893212d9302b56926e5e247649d78b6da751603f?apiKey=f400854b370041c18ce96f7be72648db&" alt="" class="mt-12 mb-1 max-w-full aspect-[5] w-[120px]" />
+      </nav>
+    </footer>
+  </div>
